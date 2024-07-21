@@ -53,14 +53,13 @@ public class CheckoutActivity extends AppCompatActivity {
             Toast.makeText(this, "Your order has been placed!", Toast.LENGTH_SHORT).show();
 
             // Navigate back to the MenuActivity
-            intent.set(new Intent(CheckoutActivity.this, MenuPagerAdapter.class));
+            intent.set(new Intent(CheckoutActivity.this, MainActivity.class));
+
             startActivity(intent.get());
 
             // Optionally finish the current activity if you don't want it to stay in the back stack
             finish();
 
-            // Handle order confirmation
-            // For example, navigate to another screen or show a confirmation message
         });
     }
 }
