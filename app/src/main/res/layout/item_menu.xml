@@ -29,6 +29,7 @@
                 android:textColor="@color/brown"
                 android:fontFamily="@font/redressed"
                 android:text="Item Name"
+                android:textStyle="bold"
                 android:layout_marginBottom="4dp" />
 
             <TextView
@@ -38,6 +39,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/brown"
                 android:fontFamily="@font/redressed"
+                android:textStyle="bold"
                 android:text="Price: $0.00" />
         </LinearLayout>
 
@@ -83,6 +85,7 @@
                 android:textSize="18sp"
                 android:textColor="@color/brown"
                 android:fontFamily="@font/redressed"
+                android:textStyle="bold"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 />
