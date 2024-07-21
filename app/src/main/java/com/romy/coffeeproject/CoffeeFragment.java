@@ -35,7 +35,7 @@ public class CoffeeFragment extends Fragment {
 
     private ArrayList<MenuItem> getCoffeeItems() {
         ArrayList<MenuItem> coffeeItems = new ArrayList<>();
-        coffeeItems.add(new MenuItem("Cappuccino", 4.99, R.drawable.cappuccino));
+        coffeeItems.add(new MenuItem("Americano", 4.99, R.drawable.americano));
         coffeeItems.add(new MenuItem("Latte", 5.49, R.drawable.latte));
         coffeeItems.add(new MenuItem("Espresso", 3.99, R.drawable.espresso));
         return coffeeItems;
