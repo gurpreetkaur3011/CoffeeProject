@@ -45,6 +45,10 @@
             android:inputType="textEmailAddress"
             android:textColorHighlight="@color/brown"
             android:textStyle="normal"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/redressed"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.41"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +83,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/brown"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/redressed"
+            app:boxStrokeColor="@color/brown"
             android:textColorHighlight="@color/brown"/>
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -39,6 +39,8 @@
             android:exported="true">
         </activity>
 
+        <activity android:name=".CheckoutActivity" /> <!-- Add this line -->
+
 
         <!-- Metadata for Google Maps API Key -->
         <meta-data
