@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Coffee Application</string>
+    <string name="news_menu">News</string>
+    <string name="menu_menu">Menu</string>
+    <string name="geo_menu">Map</string>
+    <string name="user_menu">Profile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="forget_pass">Forgot Password?</string>
+    <string name="sign_in_with">Sign In With</string>
+    <string name="vkontakte">Contact</string>
+    <string name="google">Google</string>
+    <string name="pass_recovery">Password Recovery</string>
+    <string name="code_from_message">Code from Message</string>
+    <string name="code">Code</string>
+    <string name="pass_confirm">Password Confirmation</string>
+    <string name="recovery">Recover</string>
+    <string name="addresses">Our Addresses</string>
+    <string name="season_menu">Seasonal</string>
+    <string name="liked_menu">Favorites</string>
+    <string name="classic_menu">Standard</string>
+    <string name="baked_menu">Bakery</string>
+    <string name="menu">Menu</string>
+    <string name="news">News</string>
+    <string name="person">Personal Account</string>
+    <string name="person_name_and_firstname">Name Firstname</string>
+    <string name="person_phone_number">+7 (999) 999-99-99</string>
+    <string name="loyalty_program">Loyalty Program</string>
+    <string name="orders_history">Order History</string>
+    <string name="exit">Exit</string>
+    <string name="order_number_text">Order #</string>
+    <string name="num_order">0000001</string>
+    <string name="product">Product</string>
+    <string name="cost">Price</string>
+    <string name="list_product">Cappuccino\nLatte\nCroissant</string>
+    <string name="list_cost">200p\n180p\n59p</string>
+    <string name="final_cost">Total Cost</string>
+    <string name="num_final_cost">439p</string>
+    <string name="name_product">Cappuccino</string>
+    <string name="cost_name_product">100p</string>
+    <string name="add_in_cart">Add to Cart</string>
+    <string name="add_in_liked">Add to Favorites</string>
+    <string name="name_menu_elem">Name Menu Element</string>
+    <string name="choose_syrup">Choose Syrup</string>
+    <string name="back">Back</string>
+    <string name="description">Description</string>
+    <string name="name_news">News</string>
+    <string name="date_news">date</string>
+    <string name="information_of_loyalty">The loyalty program rewards loyal customers with discounts and bonuses.</string>
+    <string name="close">Close</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="firstname">Firstname</string>
+    <string name="date_birthday">Date of Birth</string>
+    <string name="final_reg">Register</string>
+    <string name="menu_elem_counter">1</string>
+    <string name="news_description">News Description</string>
+    <string name="news_header">News Title</string>
+    <string name="final_int_cost">0p</string>
+    <string name="pay">Pay</string>
+    <string name="cart">Cart</string>
+    <string name="syrop">Syrup:</string>
+    <string name="cost_with_dvoetochie">Cost:</string>
+    <string name="final_cart_cost">21313p</string>
+    <string name="witpout_syrop">Without Syrup</string>
+    <string name="Email">Email</string>
+    <string name="edittext_hint">Enter your information here</string>
+
+
+    <string-array name="syrups_list">
+        <item>Without Syrup</item>
+        <item>Vanilla</item>
+        <item>Caramel</item>
+        <item>Chocolate</item>
+        <item>Nut</item>
+        <item>Pistachio</item>
+        <item>Salted Caramel</item>
+    </string-array>
+</resources>

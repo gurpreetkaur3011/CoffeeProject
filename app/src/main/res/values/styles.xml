@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- TabLayout style -->
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextColor">@color/brown</item>
+        <item name="tabSelectedTextColor">@color/brown</item>
+        <item name="tabIndicatorColor">@color/brown</item>
+    </style>
+</resources>

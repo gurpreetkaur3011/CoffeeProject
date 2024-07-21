@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/brown"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to CoffeeHackers"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/redressed"
+                android:layout_gravity="center"
+                android:padding="8dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <!-- Header or Title -->
+<!--        <TextView-->
+<!--            android:id="@+id/home_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Welcome to CoffeeApp"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:backgroundTint="@color/brown"-->
+<!--            android:fontFamily="@font/redressed"-->
+<!--            android:textColorHint="@color/brown"-->
+<!--            app:boxStrokeColor="@color/brown"-->
+<!--            />-->
+
+        <!-- Featured Coffee Section -->
+        <TextView
+            android:id="@+id/featured_coffee_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Coffee"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/roboto_medium"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown"
+            />
+
+        <!-- First Featured Coffee Image -->
+        <ImageView
+            android:id="@+id/featured_coffee_image1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/icedcoffee"
+            android:contentDescription="Cappuccino"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp" />
+
+        <!-- Second Featured Coffee Image -->
+        <TextView
+            android:id="@+id/featured_coffee_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/roboto_medium"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown"
+            />
+
+        <ImageView
+            android:id="@+id/featured_coffee_image2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cappcoffee"
+            android:contentDescription="Espresso"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp" />
+
+        <!-- Third Featured Coffee Image -->
+        <TextView
+            android:id="@+id/featured_coffee_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/roboto_medium"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown"
+            />
+
+        <ImageView
+            android:id="@+id/featured_coffee_image3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/latte"
+            android:contentDescription="Latte"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp" />
+
+        <!-- Fourth Featured Coffee Image -->
+        <TextView
+            android:id="@+id/featured_coffee_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Arrival"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/roboto_medium"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown"
+            />
+
+        <ImageView
+            android:id="@+id/featured_coffee_image4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/coffeenew"
+            android:contentDescription="New Arrival Again!"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
