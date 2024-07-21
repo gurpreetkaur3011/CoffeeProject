@@ -39,8 +39,13 @@
             android:exported="true">
         </activity>
 
-        <activity android:name=".CheckoutActivity" /> <!-- Add this line -->
+        <!-- CheckoutActivity declaration -->
+        <activity android:name=".CheckoutActivity" />
 
+        <!-- ReviewActivity declaration -->
+        <activity android:name=".ReviewActivity" />
+
+        <activity android:name=".ItemDetailsActivity" />
 
         <!-- Metadata for Google Maps API Key -->
         <meta-data

@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_cart:
                     selectedFragment = new CartFragment();
                     break;
+                case R.id.nav_reviews:
+                    // Navigate to reviews fragment
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragment_container, new ReviewsFragment())
+                            .commit();
+                    break;
             }
             if (selectedFragment != null) {
                 fragmentManager.beginTransaction()
