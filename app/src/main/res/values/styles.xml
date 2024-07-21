@@ -6,8 +6,8 @@
 
     <!-- TabLayout style -->
     <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabTextColor">@color/brown</item>
-        <item name="tabSelectedTextColor">@color/brown</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
         <item name="tabIndicatorColor">@color/brown</item>
     </style>
 </resources>
