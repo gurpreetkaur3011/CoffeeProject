@@ -42,11 +42,6 @@
         <!-- CheckoutActivity declaration -->
         <activity android:name=".CheckoutActivity" />
 
-        <!-- ReviewActivity declaration -->
-        <activity android:name=".ReviewActivity" />
-
-        <activity android:name=".ItemDetailsActivity" />
-
         <!-- Metadata for Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
