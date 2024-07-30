@@ -1,6 +1,5 @@
 package com.romy.coffeeproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,40 +45,55 @@ public class CartFragment extends Fragment {
 
         Button checkoutButton = view.findViewById(R.id.checkout_button);
         checkoutButton.setOnClickListener(v -> {
-            // Example data to pass
             String userInfo = "User: CoffeeHackers"; // Replace with actual user info
             String orderSummary = generateOrderSummary(); // Replace with actual order summary
             double tax = calculateTax(totalPrice); // Replace with actual tax
-            double total = totalPrice + tax; // Calculate total
+            double total = totalPrice + tax;
 
-            Intent intent = new Intent(getActivity(), CheckoutActivity.class);
-            intent.putExtra("USER_INFO", userInfo);
-            intent.putExtra("ORDER_SUMMARY", orderSummary);
-            intent.putExtra("SUBTOTAL", totalPrice);
-            intent.putExtra("TAX", tax);
-            intent.putExtra("TOTAL", total);
+            // Navigate to OrderFragment
+            Bundle bundle = new Bundle();
+            bundle.putString("USER_INFO", userInfo);
+            bundle.putString("ORDER_SUMMARY", orderSummary);
+            bundle.putDouble("SUBTOTAL", totalPrice);
+            bundle.putDouble("TAX", tax);
+            bundle.putDouble("TOTAL", total);
 
-            startActivity(intent);
+            OrderFragment orderFragment = new OrderFragment();
+            orderFragment.setArguments(bundle);
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, orderFragment) // Replace with your actual fragment container ID
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        Button goToMenuButton = view.findViewById(R.id.go_to_menu_button);
+        goToMenuButton.setOnClickListener(v -> {
+            // Navigate to MenuFragment
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new MenuFragment()) // Replace with your actual fragment container ID
+                    .addToBackStack(null)
+                    .commit();
         });
 
         return view;
     }
 
     private String generateOrderSummary() {
-        // Generate a summary of items in the cart
         StringBuilder summary = new StringBuilder();
         Map<MenuItem, Integer> cartMap = CartManager.getCartItems();
         for (Map.Entry<MenuItem, Integer> entry : cartMap.entrySet()) {
             summary.append(entry.getKey().getName())
-                    .append(" x")
+                    .append(" (x")
                     .append(entry.getValue())
+                    .append("): $")
+                    .append(entry.getKey().getPrice() * entry.getValue())
                     .append("\n");
         }
         return summary.toString();
     }
 
     private double calculateTax(double subtotal) {
-        // Calculate tax (example: 15%)
-        return subtotal * 0.15;
+        return subtotal * 0.15; // Example tax rate of 15%
     }
 }

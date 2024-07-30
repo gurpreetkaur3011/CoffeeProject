@@ -40,22 +40,25 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         holder.priceTextView.setText(String.format("$%.2f", item.getPrice()));
         holder.imageView.setImageResource(item.getImageResource());
 
-        holder.quantityTextView.setText("0");
+        // Get current quantity from CartManager
+        int currentQuantity = CartManager.getItemQuantity(item);
+        holder.quantityTextView.setText(String.valueOf(currentQuantity));
 
         holder.increaseButton.setOnClickListener(v -> {
-            int quantity = Integer.parseInt(holder.quantityTextView.getText().toString());
-            quantity++;
+            int quantity = currentQuantity + 1;
             holder.quantityTextView.setText(String.valueOf(quantity));
+            CartManager.addItemToCart(item, 0); // Increment by 1
             if (onItemClickListener != null) {
                 onItemClickListener.onItemClick(item, quantity);
             }
         });
 
         holder.decreaseButton.setOnClickListener(v -> {
-            int quantity = Integer.parseInt(holder.quantityTextView.getText().toString());
+            int quantity = currentQuantity;
             if (quantity > 0) {
                 quantity--;
                 holder.quantityTextView.setText(String.valueOf(quantity));
+                CartManager.addItemToCart(item, -1); // Decrement by 1
                 if (onItemClickListener != null) {
                     onItemClickListener.onItemClick(item, quantity);
                 }

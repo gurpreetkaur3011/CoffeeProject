@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -46,6 +46,33 @@
         android:textStyle="bold"
         android:layout_marginTop="16dp" />
 
+    <EditText
+        android:id="@+id/contact_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email or phone number"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/contact_method_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/email_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/sms_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/confirm_button"
         android:layout_width="match_parent"
@@ -56,4 +83,18 @@
         android:textColorHint="@color/brown"
         app:boxStrokeColor="@color/brown"
         android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/go_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Cart"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
+        android:fontFamily="@font/redressed"
+        android:textColorHint="@color/brown"
+        app:boxStrokeColor="@color/brown"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
+
+

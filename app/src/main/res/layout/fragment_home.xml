@@ -37,18 +37,18 @@
 
 
         <!-- Header or Title -->
-<!--        <TextView-->
-<!--            android:id="@+id/home_title"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Welcome to CoffeeApp"-->
-<!--            android:textSize="24sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:backgroundTint="@color/brown"-->
-<!--            android:fontFamily="@font/redressed"-->
-<!--            android:textColorHint="@color/brown"-->
-<!--            app:boxStrokeColor="@color/brown"-->
-<!--            />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/home_title"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Welcome to CoffeeApp"-->
+        <!--            android:textSize="24sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:backgroundTint="@color/brown"-->
+        <!--            android:fontFamily="@font/redressed"-->
+        <!--            android:textColorHint="@color/brown"-->
+        <!--            app:boxStrokeColor="@color/brown"-->
+        <!--            />-->
 
         <!-- Featured Coffee Section -->
         <TextView
@@ -70,7 +70,7 @@
             android:id="@+id/featured_coffee_image1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/icedcoffee"
+            android:src="@drawable/black_coffee"
             android:contentDescription="Cappuccino"
             android:scaleType="centerCrop"
             android:layout_marginTop="8dp" />

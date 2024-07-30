@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             fragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, new HomeFragment())
                     .commit();
+            bottomNavigationView.setSelectedItemId(R.id.nav_home);
         }
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -16,8 +16,7 @@
         android:backgroundTint="@color/brown"
         android:fontFamily="@font/redressed"
         android:textColorHint="@color/brown"
-        app:boxStrokeColor="@color/brown"
-        />
+        app:boxStrokeColor="@color/brown" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cart_recycler_view"
@@ -27,8 +26,7 @@
         android:backgroundTint="@color/brown"
         android:fontFamily="@font/redressed"
         android:textColorHint="@color/brown"
-        app:boxStrokeColor="@color/brown"
-        />
+        app:boxStrokeColor="@color/brown" />
 
     <TextView
         android:id="@+id/total_price"
@@ -39,18 +37,34 @@
         android:backgroundTint="@color/brown"
         android:fontFamily="@font/redressed"
         android:textColorHint="@color/brown"
-        app:boxStrokeColor="@color/brown"
-        />
+        app:boxStrokeColor="@color/brown" />
 
-    <Button
-        android:id="@+id/checkout_button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Checkout"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/brown"
-        android:fontFamily="@font/redressed"
-        android:textColorHint="@color/brown"
-        app:boxStrokeColor="@color/brown"
-        />
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/checkout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/redressed"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown" />
+
+        <Button
+            android:id="@+id/go_to_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Menu"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/brown"
+            android:fontFamily="@font/redressed"
+            android:textColorHint="@color/brown"
+            app:boxStrokeColor="@color/brown" />
+    </LinearLayout>
 </LinearLayout>
