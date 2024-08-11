@@ -38,9 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.nav_reviews:
                     // Navigate to reviews fragment
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.fragment_container, new ReviewsFragment())
-                            .commit();
+                    selectedFragment = new ReviewsFragment();
                     break;
             }
             if (selectedFragment != null) {
